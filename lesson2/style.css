@@ -1,19 +1,24 @@
 body{
     background-color: white;
+    /*'Roboto' - семейство шрифта, sans-serif - без насечек*/
+    font-family: 'Roboto', sans-serif; 
+    
 }
 
 .blueText{
     color:blue;
 }
 .centeredText{
-text-align:center; /* центрирование*/
+/* центрирование*/
+text-align:center; 
 color:green
 }
 .redText{
     color:red;
 }
 .bigText{
-    font-size: 51px; /* размер шрифта*/
+    /* размер шрифта*/
+    font-size: 51px; 
 }
 .square{
 height: 200px; /*ширина*/
@@ -22,7 +27,9 @@ width: 200px; /*высота*/
 .circle{
 height: 200px; /*ширина*/
 width: 200px; /*высота*/
-border-radius: 50%;  /* радиус закрыгления краев, 50% это круг, меньше - закругляемые края у квадрата"*/
+/* радиус закрыгления краев, 50% это круг, 
+меньше - закругляемые края у квадрата"*/
+border-radius: 50%;  
 }
 
 .yellow{
