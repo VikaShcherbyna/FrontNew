@@ -5,8 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<!-- если для формы мы не указали конкретный адрес, то запрос уходит на ту же страницу,
+если мы хотим чтобы запрос уходил на другой сайт или сервер, необходимр указать его адрес" -->
 <body>
-    <p>hjhjооо</p>
     
+    <!-- form нужен для отправки какого либо запроса на сервер --> 
+    <!-- action="" это адрес куда будет уходить запрос -->
+    <form id="contact-form" action="https://www.google.com/search">
+        <div>
+        <label>
+            Найдите то, что вас интересует!
+            <!-- type="text"выделяемая рамками область для ввода текста, где placeholder
+            то, что будет отображаться в рамке 
+            name это то, как будет называться параметр, который отправляется данным input -->
+            <input name="q" type="text" placeholder="Введите ваш запрос...">
+        </label>
+    </div>
+    <div>
+        <!-- type="submit" - кнопка -->
+        <input type="submit" placeholder="Найти">
+    </div>
+    
+
+<!-- форма для ввода почты и пароля -->
+<div>
+    <label>
+       Email 
+    <input type="email" placeholder="Введите email..." name="email">
+</label>
+</div>
+<div>
+    <label>
+        Пароль 
+    <input required type="password" placeholder="Введите пароль..." name="password">
+</label>
+</div>
+
+<!-- форма чтоб поставить метку в кружочке_(только один раз)-->
+<div>
+    Ваш возраст
+        <input id="age1" type="radio" name="age" value="0-18">
+        <label for="age1">0-18 </label>
+</div>
+<div>
+    Ваш возраст
+        <input id="age2" type="radio" name="age" value="19-50">
+        <label for="age2">19-50 </label>
+</div>
+<div>
+    Ваш возраст
+        <input id="age3" type="radio" name="age" value="50+">
+        <label for="age3">51+ </label>
+</div>
+
+<!-- форма для выбора любимого цвета из выпадающего меню -->
+<div>
+        <input  type="color" id="favorite-color" name="color">
+        <label for="favorite-color">Любимый цвет</label>
+    </div>
+</div>
+
+<!-- выбор даты с помощью календаря -->
+<div>
+    <input type="date" id="birth-date" name="birthDay">
+    <label for="birthday">Дата рождения</label>
+</div>
+
+<!-- бегунок перетягивающийся -->
+<div>
+    <input type="range" min="0" max="500" id="friend-count" name="FriendCount">
+    <label for="friend-count">Количество друзей(0-500)</label>
+</div>
+
+<!-- выпадающий список -->
+<div>
+    <label >Способ связи с вами</label>
+    <!-- select не привязывается к форме автоматически как inout,
+    поэтому тегу Form нужно присвоить id и потом его указать в select через form="contact-form"
+    если ничего не привязать - визуально не изменится но на сервер ничего не уйдет> -->
+    <select name="Contact" form="contact-form">
+    <option value="phone">Телефон</option>
+    <option value="email">Email</option>
+    <option value="whatsapp">WhatsApp</option>
+</select>
+</div>
+
+<!-- чекбокс - ставим галочки -->
+<div>
+    <input type="checkbox" id="agree1" name="agree_spam" value="Yes">
+    <label for="agree1">Согласен на спам</label>
+</div>
+<div>
+    <input type="checkbox" id="agree2" name="agree_spam" value="Yes">
+    <label for="agree2">Согласен на условия обработки данных</label>
+</div>
+<div>
+    <input type="checkbox" id="agree3" name="agree_spam" value="Yes">
+    <label for="agree3">Согласен на аренду вашей квартиры</label>
+</div>
+<div>
+    <input type="submit" value="Отправить!">
+</div>
+
+
+</form>
 </body>
 </html>
