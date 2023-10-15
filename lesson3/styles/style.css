@@ -1,0 +1,74 @@
+body{
+}
+.square{
+    width: 200px;
+    height: 300px;
+    border: 3px dashed #e91e0e; 
+    /*solid -сплошная линия
+     dashed - пунктирная*/
+     margin: 10px;
+     padding: 10px 20px;
+     /*прячет padding внутри эллемента, т.е размер
+     блока 200*200, а не (200+padding)*(200+padding)*/
+     box-sizing: border-box;
+     border-radius: 10%; 
+     /* display: inline-block; выключит блочный режим и все в строку разместит*/
+}
+.room{ /* сделали фон блока*/
+    background-image: url('https://www.ikea.com/ext/ingkadam/m/359adf248e1bd61a/original/PH193761.jpg');
+    background-size: cover; /*вставил сохраняя размер, обрезая лишнее*/
+    /*contein замощает чтоб все пустые места перекрыть картинкой*/
+    background-position: center;
+    background-repeat: no-repeat; /*без повтора*/
+
+}
+
+.mainHeading{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.mainHeading:hover{ /* при наведении мышки*/
+    color: #6a4583
+}
+.boxImageCover{/*как вставить картинку через класс:*/
+    width: 150px;
+    height: 100px;     
+    background-image: url('https://tir-sidon.ru/image/cache/catalog/1-800x800.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; /*без повтора заполнения размера*/
+    background-position: center; /* ставим по центру div размеры которые указали выше 150*100*/ 
+    /*margin-left: 25px;  */
+    /*margin: auto; для картинки через класс не срабатывает*/   
+}
+
+.boxImage{  /*как вставить картинку через тег img:*/
+    width: 100px;
+    display: block;/* указываем что это блочный эл-т и тогда  margin: auto будет работать*/
+    margin: auto;
+}
+.boxHeading{
+    text-align: right;
+    mar
+}
+.red{
+    margin: 30px 20px 40px 20px;
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+    /* мменяется цвет с синего на оранж с задержкой 1с*/
+    /*ease-in-out, что означает, что изменения будут начинаться медленно, затем ускоряться и замедляться перед завершением.*/
+    transition: background-color 1s ease-in-out, transform 0.5s ease-in-out;
+}
+.green{
+    background-color: green;
+}
+.blue:hover{ /*при наведении мышкой цвет блока изменяем на оранж*/
+    background-color: orange;
+    /*означает, что элемент будет увеличен в размерах в 1.2 раза относительно его исходных размеров.*/
+    transform: scale(1.2);
+}
