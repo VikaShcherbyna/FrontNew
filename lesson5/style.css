@@ -1,31 +1,52 @@
-body{
-    margin: 0;
-    display: flex;/* по умолчанию горизонтальный*/
-    flex-direction: column; /*направление: столбцами вертикально  элементы будут растягиваться или сжиматься по вертикали в зависимости от доступного пространства.*/
+body {
+  margin: 0;
+  display: flex; /* по умолчанию горизонтальный*/
+  flex-direction: column; /*направление: столбцами вертикально  элементы будут растягиваться или сжиматься по вертикали в зависимости от доступного пространства.*/
 }
-h1{
-    margin: 0;
+.header {
+  height: 15vh;
+  background-color: orange;
+  padding: 20px;
+  display: flex;
+  /* позиция по горизонтали*/
+  justify-content: center;
+  /*позиция по вертикали*/
+  align-items: flex-end;
 }
-.header{
-    height: 10vh;
-    background-color: orange;
 
+
+.main {
+  min-height: 80vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
 }
-.main{
-min-height: 80vh;
-background-color: #fff;
-display: flex;
-flex-direction: row; 
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.card{
+h1 {
+  margin: 0;
+}
+p {
     display: flex;
-  margin 10px;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+.card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
   box-sizing: border-box; /*размер элемента включает в себя границы и паддинг, и ширина (или высота) элемента остается фиксированной.*/
-    height: 300px;
-    width: 250px; 
-    background-color: grey;
+  height: 300px;
+  width: 250px;
+  background-color: grey;
 }
-.footer{
-height: 10vh;
-background-color: grey;
+.footer {
+  height: 10vh;
+  background-color: grey;
 }
