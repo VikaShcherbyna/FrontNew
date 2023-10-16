@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    display: flex;/* по умолчанию горизонтальный*/
+    flex-direction: column; /*направление: столбцами вертикально  элементы будут растягиваться или сжиматься по вертикали в зависимости от доступного пространства.*/
+}
+h1{
+    margin: 0;
+}
+.header{
+    height: 10vh;
+    background-color: orange;
+
+}
+.main{
+min-height: 80vh;
+background-color: #fff;
+display: flex;
+flex-direction: row; 
+}
+.card{
+    display: flex;
+  margin 10px;
+  box-sizing: border-box; /*размер элемента включает в себя границы и паддинг, и ширина (или высота) элемента остается фиксированной.*/
+    height: 300px;
+    width: 250px; 
+    background-color: grey;
+}
+.footer{
+height: 10vh;
+background-color: grey;
+}
