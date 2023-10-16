@@ -1,0 +1,32 @@
+main {
+  height: 200vh;
+}
+
+.logo {
+}
+.navbar {
+  background-color: rgb(102, 102, 102);
+  font-size: 20px; 
+  color: aliceblue;
+  text-decoration: underline; /*подчеркивание*/
+  display: flex;
+  flex-flow: row wrap; /*по горизонтали и переносится */
+  justify-content: space-around; /*растояние между эл-ми равно*/
+  align-items: center; /*выравнивание по центру */
+  position: sticky; /*закрепляем навигацию при скролинге и вернется в исходное положение*/
+  top: 0; /*при скролинге нави сдвинется вверх*/
+}
+a{
+ margin: 5px; 
+}
+a:hover{
+    color: #e0cb09;
+}
+
+@font-face {
+  font-family: "NarrowNews";
+  src: url("./fonts/ClanOT-NarrowNews.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+ 
+}
