@@ -1,0 +1,24 @@
+body{
+    background-image: url('https://bogatyr.club/uploads/posts/2023-03/1678424488_bogatyr-club-p-novogodnii-fon-art-foni-vkontakte-17.jpg');
+    background-size: cover; /*изображение будет маштабироваться и повторяться*/
+}
+.title{
+    font-size: 50px; /*размер*/
+    font-weight: 900;/*жирность*/
+    text-align: center; /* по центру*/
+    color: red;
+}
+.text{
+    font-size: 20px; /*размер*/
+    font-weight: 900;/*жирность*/
+    text-align: left; 
+    max-width: 500px;
+    color: green;
+}
+.return{
+    font-size: 15px; /*размер*/
+    font-weight: 900;/*жирность*/
+    text-align: left; 
+    max-width: 500px;
+    color: mediumblue;
+}

@@ -1,0 +1,30 @@
+body{
+    background-image: url('https://www.zastavki.com/pictures/originals/2020New_Year_wallpapers_Beautiful_background_for_Christmas_card_with_fir_branch_and_toys_146408_.jpg');
+    background-size: cover; /*изображение будет маштабироваться и повторяться*/
+}
+.title{
+    font-size: 50px; /*размер*/
+    font-weight: 900;/*жирность*/
+    text-align: center; /* по центру*/
+}
+.aboutMe{
+    font-size: 35px; 
+    font-weight: 900;
+}
+input{
+    margin: 5px;
+}
+button{
+    margin: 5px;
+}
+div{
+    background-color: rgb(193, 210, 236);
+    width: 200px;
+    margin: 10px;
+}
+.bigDiv1{
+    background-color: rgb(193, 210, 236);
+    width: 220px;
+    margin: 10px;
+}
+

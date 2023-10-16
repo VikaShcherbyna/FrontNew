@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Letter to Santa</title>
+  </head>
+  <body>
+    <header>
+      <p class="title">Отправим письмо Санте?</p>
+      <p class="aboutMe">Итак дружочек, расскажи о себе:</p>
+    </header>
+    <form id="contact-form" action="">
+      <div>
+        <input type="name" placeholder="Введи своe имя.." />
+      </div>
+      <div>
+        <input type="name" placeholder="Введи свой логин" />
+      </div>
+      <div>
+        <input type="password" placeholder="Введи свой пароль" />
+      </div>
+      <div>
+        <input type="email" placeholder="Введи свой email..." />
+      </div>
+      <div>
+        <label for="age">Сколько тебе лет:</label>
+        <select id="age" name="age">
+          <option value="0">0</option>
+          <option value="0">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="0">5</option>
+          <option value="0">6</option>
+          <option value="1">7</option>
+          <option value="2">8</option>
+          <option value="3">9</option>
+          <option value="0">10</option>
+          <option value="0">11</option>
+          <option value="1">12</option>
+          <option value="2">13</option>
+          <option value="3">14</option>
+        </select>
+      </div>
+      <div>
+        <label>Ты хорошо вел себя в этом году?</label>
+      </div>
+
+      <div class="bigDiv1">
+        <input id="behavior" type="radio" name="behaviorYes" value="Yes" />
+        <label for="behaviorYes"> Да</label>
+
+        <input id="behavior1" type="radio" name="behaviorNo" value="No" />
+        <label for="behaviorNo"> Нет</label>
+
+        <input
+          id="behavior2"
+          type="radio"
+          name="behaviorIDontKnow"
+          value="I Dont Know"
+        />
+        <label for="behaviorIDontKnow">Я не знаю</label>
+      </div>
+
+      <div>
+        <label for="сhristmas">Как сильно ты ждешь рождества?</label>
+      </div>
+      <div>
+        <input
+          type="range"
+          min="0"
+          max="500"
+          id="сhristmas"
+          name="i-want-christmas"
+        />
+      </div>
+      <div>
+        <label>Какие игрушки ты любишь?</label>
+      </div>
+      <div>
+          <input type="checkbox" id="toys1" name="softToys" value="Soft toys" />
+          <label for="toys1">Мягкие игрушки</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toys2" name="lego" value="Lego" />
+          <label for="toys2">Lego</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toys3" name="artBox" value="Art Box" />
+          <label for="toys3">Набор для творчества</label>
+        </div>
+      </div>
+
+      <div>
+        <input
+          type="submit"
+          formaction="greetings.html"
+          value="Отправить письмо"
+        />
+      </div>
+    </form>
+  </body>
+</html>
